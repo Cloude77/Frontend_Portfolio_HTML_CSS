@@ -1,0 +1,73 @@
+/* Фон.Цвет ширины блока растянут на всю страницу */
+.element {
+    background-color: lightpink;
+    width: 400px;
+    height: 200px;
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/* Убираем body. Высоту с каждой стороны зеленого цвета */
+
+.html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Увеличиваем header и добавляем отступы по краям */
+/* Сверху и снизу отступы == 0 */
+header {
+    height: 100px;
+    padding: 0 40px;
+}
+
+/* настройка отступов ссылок и номера в header */
+/* display: flex; - размещение элементов внутри контейнера свободным образом */
+/* align-items: center; - выравнивание по центру */
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixed-container {
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+
+section {
+    padding: 40px;
+}
+
+.first-block {
+    height: 300px
+}
+/* Выравниваем по вертикали. Сверху вниз */
+.first-block > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    
+}
+
+/* margin-bottom: 30px; - отступ кнопки */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+/* каждому отдельному элементу внутри зададим одинаковую ширину */
+
+.services > div {
+    width: 200px;
+}
+
+footer {
+    padding: 40px;
+}
