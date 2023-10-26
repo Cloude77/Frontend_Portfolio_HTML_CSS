@@ -13,6 +13,7 @@
 .html, body {
     margin: 0;
     padding: 0;
+    background-color: #f6f7f9;
 }
 
 /* Увеличиваем header и добавляем отступы по краям */
@@ -79,6 +80,39 @@ section {
 .services img {
     width: 150px;
 }
+
+/* фон Адаптированная верстк */
+/* шрифт белый */
+.price-info {
+    background-color: #3d52f2;
+    color: white;
+}
+/* Кнопка button   border: 1px solid black; - граница*/
+/*  background-color: transparent; - цвет фона прозрачный */
+/*  border-radius: 5px; - граница с округлениями */
+.light-button {
+    border: 1px solid black;
+    background-color: transparent;
+    /* border-radius: 5px;  удаляем потому что используется в button*/
+
+}
+/* color: white; - цвет текста */
+.dark-button {
+    background-color: #3d52f2;
+    border: 1px solid #3d52f2;
+    /* border-radius: 5px; */
+    color: white;
+}
+
+/* видкурсора для всех кнопок */
+/* padding: 10px; - вертикальные отступы сверху и снизу */
+/* padding: 30px; - слева и справа */
+/* cursor: pointer; - изменение курсора  */
+  button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
 footer {
     padding: 40px;

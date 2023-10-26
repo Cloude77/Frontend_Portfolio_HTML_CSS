@@ -1,0 +1,23 @@
+/* border-collapse: collapse; - объединяем все границы в таблице */
+.price-list {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+/* Задаем раницу у каждой отдельной ячейки внутри td */
+/* между границей и текстом небольшое расстояние */
+/* padding: 5px; - внутренний отступ */
+.price-list td, .price-list th {
+    border: 1px solid gray;
+    padding: 5px;
+
+}
+
+/*  background-color: lightgray; - цвет фона  */
+.price-list thead {
+    background-color: lightgray;
+}
+/* font-weight: bold; - цвет жирным */
+.price-list tfoot {
+    background-color: lightgreen;
+    font-weight: bold;
+}
