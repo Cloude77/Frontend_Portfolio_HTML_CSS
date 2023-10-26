@@ -30,13 +30,13 @@ header > div {
     justify-content: space-between;
     align-items: center;
 }
-
+/* background-color - убрали голубой фон */
 .fixed-container {
     max-width: 1000px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 section {
@@ -47,12 +47,20 @@ section {
     height: 300px
 }
 /* Выравниваем по вертикали. Сверху вниз */
+/* backround-image для икоки справа Robot */
+/* backround-size - меняем фон */
+/* contain - картинка упирается в высоту или  ширину контейнера*/
+/* background-repeat: no-repeat; - чтобы картинка на повторялась друг за другом */
+/*  background-position: right center; - по правому краю и по вертикали по центру  */
 .first-block > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    
-    
+    align-items: flex-start;  
+    background-image: url('img/YoungMan.png');   
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 /* margin-bottom: 30px; - отступ кнопки */
@@ -66,6 +74,10 @@ section {
 
 .services > div {
     width: 200px;
+}
+
+.services img {
+    width: 150px;
 }
 
 footer {
