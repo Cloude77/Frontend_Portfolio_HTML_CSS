@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style4.css" rel="stylesheet">
+    <title>Forms</title>
+</head>
+<body>
+    <form class="reg-form">
+        <h1>Регистрация на конференцию</h1>
+        <div>
+            <!-- label - подписи кполям и форм -->
+            </label>Фамилия, имя, отчество:</label>
+            <!-- создаем типы полей форм  "text" - простой ввод текста в одну строку, name="name" - имя этого поля-->
+            <input type="text" name="name" class="reg-form__input">
+        </div>
+        <div> 
+             <!--  Здесь должна проявляться корректность ввода e-mail-->
+             <!-- можно дописать id, чтобы при нажимании на текст, активировалось поле -->
+            <label for="email">E-mail:</label>           
+            <input type="email" id="email" name="name" class="reg-form__input">
+        </div>
+
+        <!-- radio кнопки выбираем пол-->
+        <div> 
+            </label>Пол:</label>   
+            <div>
+                <label><input type="radio" name="sex" value="male">мужской</label>
+                <label><input type="radio" name="sex" value="female">женский<label>
+            </div>                   
+        </div>
+
+        <!-- Выбор одного или нескольких пунктов -->
+        <div>
+            <label>Предпочтительное время выступления:</label>
+            <div>
+                <label></label>
+            </div>
+        </div>
+
+        <!-- 
+            Фамилия, имя, отчество (одно поле)
+            E-mail (с проверкой правильности ввода)
+            Пол (мужской, женский)
+            ПРедпочтительное время выступления: утро, дент и.или вечер(с возможностью выбора)
+            Выбор одной из трех секций: frontend, backend или менеджмент
+            Тема и тезисы выступления: текстовое поле
+            Презентация (прикрепление файла)
+         -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* Фиксированная ширина */
+/* margin: 0 auto; - выровнена по центру по горизонтали */
+.reg-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* justify-content: space-between; - про краям */
+/* margin-bottom: 30px; - чтобы блоки не слипались. Их будет несколько */
+.reg-form > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* поле ввода текста короткое, нужно увеличить */
+/* width: 50% - поле расширена до половины контейнера в котором оно находится */
+/* __input - бэм методология.  разделения интерфейса на независимые блоки */
+.reg-form__input {
+    width: 50%;
+
+}
